@@ -24,6 +24,9 @@
   color: white;
 }
 
+.card {
+  width: 6em;
+}
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +38,52 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.game {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:  "header header header"
+                        "left top right"
+                        "left bottom right"
+                        "footer footer footer";
+  grid-template-rows: 4em 1fr 1fr 20%;
+}
+.player-top {
+  grid-area: top;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.player-left {
+  grid-area: left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.player-right {
+  grid-area: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.player-bottom {
+  grid-area: bottom;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.header {
+  grid-area: header;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer {
+  grid-area: footer;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
