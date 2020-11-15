@@ -1,6 +1,6 @@
 
 .card {
-  width: 6em;
+  width: 4em;
 }
 
 .card-clickable {
@@ -57,12 +57,30 @@
   align-items: flex-end;
   justify-content: center;
 }
+.player-name {
+  display: flex;
+  margin-top: 0.5em;
+}
+.player {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2em;
+}
 .header {
   grid-area: header;
   background-color: #eee;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.header-win {
+  background-color: #28a745;
+  color: white;
+}
+.header-lost {
+  background-color: #bd2130;
+  color: white;
 }
 .footer {
   grid-area: footer;
@@ -71,4 +89,9 @@
   align-items: center;
   justify-content: center;
   padding-top: 3em;
+  transition: all 0.3s ease-in-out;
+}
+.footer-withdrawn {
+  padding-top: 8em;
+    opacity: 0.3;
 }
